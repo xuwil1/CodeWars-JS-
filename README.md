@@ -1,2 +1,2 @@
 # CodeWars
-Solutions of my CodeWar challenges solved using JavaScript
+Daily coding challenges to sharpen problem solving skills
