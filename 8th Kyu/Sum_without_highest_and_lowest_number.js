@@ -22,7 +22,6 @@ function sumArray(array) {
       return 0
     }else{
       array= array.sort((a,b)=> {return a-b;});
-        
         array.shift();
         array.pop();
         return array.reduce((previousValue, currentValue) => 
