@@ -7,9 +7,7 @@ Write a function that when given a URL as a string, parses out just the domain n
 */
 
 function domainName(url){
-  url=url.replace(/(.*?:\/\/)/,'');
-  url=url.replace(/w*\.*/,'');
-  url=url.replace(/((\..*))/,'');
-  return url;
-
+  return url.replace(/(.*?:\/\/)/,'')
+  .replace(/w*\.*/,'')
+  .replace(/((\..*))/,'');
 }
