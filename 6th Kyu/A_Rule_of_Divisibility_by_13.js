@@ -52,15 +52,7 @@ thirt(321) calculates 48, 48 and returns 48
 */
 
 function thirt(n) {
-  let temp=[];
-  n = n.toString().split('');
-  for(let i =0;i < n.length;i++){
-    temp.push(Math.pow(10,i)%13);
-  }
-  while(n.length>2){
-    n=n.reverse();
-    n=n.map((x,i)=>n[i]*temp[i]).reduce((prev,cur)=>prev+cur,0);
-    n=n.toString().split('');
-  }
-    return Number(n.join(''));
+  let temp=[1,10,9,12,3,4];
+  let sum = n.toString().split('').reverse().reduce((prev,cur,i)=>prev+cur*temp[i%6],0);
+  return sum===n ? n : thirt(sum);
 }
