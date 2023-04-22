@@ -19,9 +19,9 @@ function min(arr, toReturn) {
    if(pointer>arr[i]){ 
      pointer=arr[i];
     if(toReturn=='value'){
-        ret = arr[0];
+        ret = arr[i];
       }else{
-        ret = 0
+        ret = i
     }   
    }
  }
